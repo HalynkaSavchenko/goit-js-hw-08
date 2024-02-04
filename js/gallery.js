@@ -91,7 +91,10 @@ gallery.addEventListener("click", (event) => {
 
  basicLightbox.create(
     `<div class="modal">
-      <img src="${event.target.dataset.source}" alt="${event.target.alt}">
+      <img
+        class="modal-image"
+        src="${event.target.dataset.source}" 
+        alt="${event.target.alt}">
     </div>`
   ).show()
 
